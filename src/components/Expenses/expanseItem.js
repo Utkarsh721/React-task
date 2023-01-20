@@ -15,6 +15,10 @@ function ExpenseItem() {
                 <h2>Movies </h2>
                 <div>Rs 200</div>
             </div>
+            <div>
+                <h2>Movies </h2>
+                <div>Rs 200</div>
+            </div>
         </div>
     );
 
