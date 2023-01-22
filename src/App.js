@@ -1,6 +1,8 @@
 
 import './App.css';
-import ExpanseItem from './Component/ExpenseItem';
+import ExpenseItem from './Component/Expenses/ExpenseItem';
+
+import Expenses from './Component/Expenses/Expenses'
 function App() {
   const expenses = [
     {
@@ -27,39 +29,13 @@ function App() {
     },
   ]
   return (
-    <div>
-      {expenses.map((item, key) => (
-    <div key={key} className='bigContainer'>
-       <ExpanseItem title={item.title} amount={item.amount}  date={item.date} location={item.location}/>
+  <div>
+  <Expenses items ={expenses} />
+  <ExpenseItem></ExpenseItem>
+  </div>
+  )
     
-     </div>
-))}
-      
-       {/* <ExpanseItem 
-      title={expenses[1].title} 
-      amount={expenses[1].amount}
-      date={expenses[1].date}
-      location={expenses[1].location}
-      ></ExpanseItem>
-       <ExpanseItem 
-      title={expenses[2].title} 
-      amount={expenses[2].amount}
-      date={expenses[2].date}
-      location={expenses[2].location}
-      ></ExpanseItem>
-       <ExpanseItem 
-      title={expenses[3].title} 
-      amount={expenses[3].amount}
-      date={expenses[3].date}
-      location={expenses[3].location}
-      ></ExpanseItem> */}
-       {/* title={expenses[0].title} 
-      amount={expenses[0].amount}
-      date={expenses[0].date}
-      location={expenses[0].location} */}
-      
-    </div>
-  );
+  
 }
 
 export default App;
