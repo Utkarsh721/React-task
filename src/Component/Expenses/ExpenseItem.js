@@ -4,12 +4,18 @@ import ExpenseDate from './ExpenseDate';
 import ExpenseDetail from './ExpenseDetails';
 
 
-function ExpenseItem(props) {
+
+const ExpenseItem=(props) =>{
+    const clickHandler= () => {
+        console.log('Clicked!!');
+    };
+
     return (
         <Card className='expense-item'>
             <ExpenseDate date={props.date}></ExpenseDate>
-            <ExpenseDetail a={props.amount} t={props.title}></ExpenseDetail>           
+            <ExpenseDetail t={props.title} a={props.amount}></ExpenseDetail>
             <div className='expense-item__location'>{props.location}</div>
+            <button onClick={clickHandler}>Delete Expense</button>
         </Card>
     );
 
