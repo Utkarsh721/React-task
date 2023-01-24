@@ -2,6 +2,7 @@ import React from 'react';
 import './ExpenseItem.css';
 import Card from '../UI/Card';
 const ExpenseDetail=(props)=> {
+    
     return (
         <Card>
             <div className='expense-item__price'>${props.a}
