@@ -4,16 +4,21 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  background-color: #5f5b5b;
+  background-color:  #4b4b4b;
   margin: 100px;
 }
 
 .expense-item__description {
   display: flex;
 
-  flex-direction:row-reverse;
+  flex-direction:column;
   align-items: flex-end;
+  gap: 1rem;
  width:max-content;
+ align-items: flex-end;
+ flex-flow: column-reverse;
+ justify-content: flex-start;
+ flex: 1;
   margin-inline: 300px;
 inset-inline: 10px;
   position: relative;
